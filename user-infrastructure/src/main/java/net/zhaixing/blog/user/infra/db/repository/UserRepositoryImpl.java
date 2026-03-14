@@ -61,10 +61,10 @@ public class UserRepositoryImpl implements UserRepository {
         UserPO userPo = UserConverter.serialize(user);
         if (Objects.isNull(user.getId())) {
             // 如果用户ID为空，执行插入操作
-            userMapper.insert(userPo);
+//            userMapper.insert(userPo);
         } else {
             // 如果用户ID非空，执行更新操作
-            userMapper.updateById(userPo);
+//            userMapper.updateById(userPo);
         }
         // 将更新后的数据库对象转换回领域模型对象并返回
         return UserConverter.deserialize(userPo);
