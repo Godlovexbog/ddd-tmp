@@ -50,10 +50,10 @@
 
 ## 9. 基础设施层 - 数据库访问
 
-- [ ] 9.1 在 infrastructure/db/model/ 创建 PO 类（继承 BaseModel，包含 is_deleted 字段）
-- [ ] 9.2 在 infrastructure/db/mapper/ 创建 Mapper 接口
-- [ ] 9.3 在 infrastructure/db/converter/ 创建 Converter 类（serialize/deserialize 方法）
-- [ ] 9.4 在 infrastructure/db/repository/ 创建 Repository 实现（实现领域层接口，使用 @Repository）
+- [x] 9.1 在 infrastructure/db/model/ 创建 PO 类（继承 BaseModel，包含 is_deleted 字段）
+- [x] 9.2 在 infrastructure/db/mapper/ 创建 Mapper 接口
+- [x] 9.3 在 infrastructure/db/converter/ 创建 Converter 类（serialize/deserialize 方法）
+- [x] 9.4 在 infrastructure/db/repository/ 创建 Repository 实现（实现领域层接口，使用 @Repository）
 
 ## 10. 基础设施层 - 事件
 
@@ -100,7 +100,7 @@
 ## 16. Git 分支与提交（遵循 git-branch-management.md 和 git-commit规范.md）
 
 - [x] 16.1 从 uat 创建特性分支 T_REAL_CALC_VAL
-- [ ] 16.2 按规范格式提交：comment+作者+任务号+描述
+- [x] 16.2 按规范格式提交：comment+作者+任务号+描述
 - [ ] 16.3 合并顺序：T → dev → st → uat
 
 ## 17. 集成测试
