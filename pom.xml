@@ -16,6 +16,10 @@
         <module>user-interaction</module>
         <module>user-rpc</module>
         <module>user-start</module>
+        <module>valuation-domain</module>
+        <module>valuation-application</module>
+        <module>valuation-infrastructure</module>
+        <module>valuation-interaction</module>
     </modules>
 
     <name>mumu-user</name>
@@ -123,6 +127,30 @@
             <dependency>
                 <groupId>net.zhaixing.blog</groupId>
                 <artifactId>user-rpc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.zhaixing.blog</groupId>
+                <artifactId>valuation-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.zhaixing.blog</groupId>
+                <artifactId>valuation-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.zhaixing.blog</groupId>
+                <artifactId>valuation-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.zhaixing.blog</groupId>
+                <artifactId>valuation-interaction</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
