@@ -2,6 +2,7 @@ package net.zhaixing.blog.valuation.interaction.api;
 
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
+import net.zhaixing.blog.user.common.annotation.RateLimiter;
 import net.zhaixing.blog.user.common.model.result.BaseResult;
 import net.zhaixing.blog.user.common.model.result.Result;
 import net.zhaixing.blog.valuation.application.command.ValuationAppService;
@@ -43,7 +44,9 @@ public class ValuationApi {
 
     /**
      * 创建估值记录
+     * 限流: 每分钟最多 60 次
      */
+    @RateLimiter(value = 60)
     @PostMapping("record")
     public Result<Void> create(@RequestBody @Valid CreateValuationCommand command) {
         valuationAppService.createValuation(command);
@@ -88,7 +91,9 @@ public class ValuationApi {
 
     /**
      * 计算实时估值-按项目ID
+     * 限流: 每分钟最多 120 次
      */
+    @RateLimiter(value = 120)
     @GetMapping("calculate/project/{projectId}")
     public Result<BigDecimal> calculateByProjectId(@PathVariable Long projectId) {
         BigDecimal amount = valuationCalculationService.calculateByProjectId(projectId);
@@ -97,7 +102,9 @@ public class ValuationApi {
 
     /**
      * 计算实时估值-按项目代码
+     * 限流: 每分钟最多 120 次
      */
+    @RateLimiter(value = 120)
     @GetMapping("calculate/code/{projectCode}")
     public Result<BigDecimal> calculateByProjectCode(@PathVariable String projectCode) {
         BigDecimal amount = valuationCalculationService.calculateByProjectCode(projectCode);

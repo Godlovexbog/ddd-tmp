@@ -1,6 +1,8 @@
 package net.zhaixing.blog.valuation.application.query.model.valuation;
 
 import lombok.Data;
+import net.zhaixing.blog.user.common.annotation.Sensitive;
+import net.zhaixing.blog.user.common.annotation.SensitiveType;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -58,8 +60,9 @@ public class ValuationDTO {
     private BigDecimal targetShare;
 
     /**
-     * 账户代码
+     * 账户代码（脱敏）
      */
+    @Sensitive(SensitiveType.NAME)
     private String accountCode;
 
     /**

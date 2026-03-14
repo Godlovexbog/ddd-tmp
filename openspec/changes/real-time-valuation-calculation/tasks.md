@@ -65,7 +65,7 @@
 - [x] 11.1 在 application/query/model/valuation/ 创建 ValuationDTO
 - [x] 11.2 在 application/query/model/transaction/ 创建 TransactionDTO
 - [x] 11.3 在 application/query/model/delivery/ 创建 DeliveryDTO
-- [ ] 11.4 如有需要，使用 @Sensitive 注解实现脱敏
+- [x] 11.4 如有需要，使用 @Sensitive 注解实现脱敏
 
 ## 12. 应用层 - 命令服务（遵循 user-application.md）
 
@@ -74,7 +74,7 @@
 - [x] 12.3 在 application/command/transaction/ 创建 TransactionCommand 接口
 - [x] 12.4 在 application/command/delivery/ 创建 DeliveryCommand 接口
 - [x] 12.5 在 application/command/impl/ 创建 AppService 实现类（使用 @Transactional）
-- [ ] 12.6 使用 @RateLimiter 注解实现限流（如需要）
+- [x] 12.6 使用 @RateLimiter 注解实现限流（如需要）
 
 ## 13. 应用层 - 查询服务
 
