@@ -1,0 +1,16 @@
+功能类型,序号,功能名称,数据表,DET数量,FTR数量,复杂度,权重,功能点数,备注
+ILF,1,t_valuation_record,t_valuation_record,7,1,低,6,6,估值记录表
+ILF,2,t_transaction_record,t_transaction_record,7,1,低,6,6,交易记录表
+ILF,3,t_cash_delivery_record,t_cash_delivery_record,4,1,低,6,6,现金交付记录表
+ILF,4,t_financial_product_delivery_record,t_financial_product_delivery_record,5,1,低,6,6,金融产品交付记录表
+EI,5,创建估值记录,t_valuation_record,8,1,低,3,3,POST /api/valuation/record
+EQ,6,查询估值记录（ID）,t_valuation_record,7,1,低,3,3,GET /api/valuation/record/{id}
+EQ,7,按项目ID查询,t_valuation_record,7,1,低,3,3,GET /api/valuation/record/project/{projectId}
+EQ,8,按项目代码查询,t_valuation_record,7,1,低,3,3,GET /api/valuation/record/code/{projectCode}
+EI,9,删除估值记录,t_valuation_record,1,1,低,3,3,DELETE /api/valuation/record/{id}
+EO,10,按项目ID计算估值,t_valuation_record+t_transaction_record+t_cash_delivery_record+t_financial_product_delivery_record,1,4,中,4,4,GET /api/valuation/calculate/project/{projectId}
+EO,11,按项目代码计算估值,t_valuation_record+t_transaction_record+t_cash_delivery_record+t_financial_product_delivery_record,1,4,中,4,4,GET /api/valuation/calculate/code/{projectCode}
+EI,12,创建交易记录,t_transaction_record,7,1,低,3,3,POST /api/valuation/transaction
+EI,13,删除交易记录,t_transaction_record,1,1,低,3,3,DELETE /api/valuation/transaction/{id}
+EI,14,创建交付记录（现金/金融）,t_cash_delivery_record+t_financial_product_delivery_record,7,1,低,3,3,POST /api/valuation/delivery
+EI,15,删除交付记录,t_cash_delivery_record+t_financial_product_delivery_record,1,1,低,3,3,DELETE /api/valuation/delivery/{id}
