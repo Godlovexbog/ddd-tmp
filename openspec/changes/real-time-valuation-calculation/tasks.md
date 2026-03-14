@@ -79,8 +79,8 @@
 ## 13. 应用层 - 查询服务
 
 - [x] 13.1 在 application/query/valuation/ 创建 ValuationQueryService 接口
-- [ ] 13.2 在 application/query/transaction/ 创建 TransactionQueryService 接口
-- [ ] 13.3 在 application/query/delivery/ 创建 DeliveryQueryService 接口
+- [x] 13.2 在 application/query/transaction/ 创建 TransactionQueryService 接口
+- [x] 13.3 在 application/query/delivery/ 创建 DeliveryQueryService 接口
 - [x] 13.4 在 application/query/impl/ 创建 QueryService 实现类（@Transactional(readOnly = true)）
 
 ## 14. 应用层 - 实时估值计算
