@@ -62,15 +62,15 @@
 
 ## 11. 应用层 - DTO/VO 模型（遵循 user-application.md）
 
-- [ ] 11.1 在 application/query/model/valuation/ 创建 ValuationDTO
-- [ ] 11.2 在 application/query/model/transaction/ 创建 TransactionDTO
-- [ ] 11.3 在 application/query/model/delivery/ 创建 DeliveryDTO
+- [x] 11.1 在 application/query/model/valuation/ 创建 ValuationDTO
+- [x] 11.2 在 application/query/model/transaction/ 创建 TransactionDTO
+- [x] 11.3 在 application/query/model/delivery/ 创建 DeliveryDTO
 - [ ] 11.4 如有需要，使用 @Sensitive 注解实现脱敏
 
 ## 12. 应用层 - 命令服务（遵循 user-application.md）
 
-- [ ] 12.1 在 application/command/valuation/ 创建 ValuationCommand 接口
-- [ ] 12.2 在 application/command/valuation/ 创建 CreateValuationCommand（实现 Command，带 @Valid 校验）
+- [x] 12.1 在 application/command/valuation/ 创建 ValuationCommand 接口
+- [x] 12.2 在 application/command/valuation/ 创建 CreateValuationCommand（实现 Command，带 @Valid 校验）
 - [ ] 12.3 在 application/command/transaction/ 创建 TransactionCommand 接口
 - [ ] 12.4 在 application/command/delivery/ 创建 DeliveryCommand 接口
 - [ ] 12.5 在 application/command/impl/ 创建 AppService 实现类（使用 @Transactional）
@@ -78,10 +78,10 @@
 
 ## 13. 应用层 - 查询服务
 
-- [ ] 13.1 在 application/query/valuation/ 创建 ValuationQueryService 接口
+- [x] 13.1 在 application/query/valuation/ 创建 ValuationQueryService 接口
 - [ ] 13.2 在 application/query/transaction/ 创建 TransactionQueryService 接口
 - [ ] 13.3 在 application/query/delivery/ 创建 DeliveryQueryService 接口
-- [ ] 13.4 在 application/query/impl/ 创建 QueryService 实现类（@Transactional(readOnly = true)）
+- [x] 13.4 在 application/query/impl/ 创建 QueryService 实现类（@Transactional(readOnly = true)）
 
 ## 14. 应用层 - 实时估值计算
 
@@ -90,10 +90,10 @@
 
 ## 15. 交互层 - REST API（遵循 user-interaction.md 和 api-security.md）
 
-- [ ] 15.1 在 interaction/api/ 创建 ValuationApi 控制器
+- [x] 15.1 在 interaction/api/ 创建 ValuationApi 控制器
 - [ ] 15.2 在 interaction/api/ 创建 TransactionApi 控制器
 - [ ] 15.3 在 interaction/api/ 创建 DeliveryApi 控制器
-- [ ] 15.4 添加 @Valid 参数校验注解
+- [x] 15.4 添加 @Valid 参数校验注解
 - [ ] 15.5 添加幂等性控制（如 @Idempotent）
 - [ ] 15.6 在 interaction/config/ 配置全局异常处理（如需要特殊处理）
 
