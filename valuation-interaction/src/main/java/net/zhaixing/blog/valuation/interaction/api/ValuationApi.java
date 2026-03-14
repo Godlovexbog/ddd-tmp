@@ -4,9 +4,11 @@ import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import net.zhaixing.blog.user.common.model.result.BaseResult;
 import net.zhaixing.blog.user.common.model.result.Result;
+import net.zhaixing.blog.valuation.application.command.ValuationAppService;
 import net.zhaixing.blog.valuation.application.command.valuation.CreateValuationCommand;
 import net.zhaixing.blog.valuation.application.query.model.valuation.ValuationDTO;
 import net.zhaixing.blog.valuation.application.query.valuation.ValuationQueryService;
+import net.zhaixing.blog.valuation.domain.aggregate.valuation.service.ValuationCalculationService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,12 +35,18 @@ public class ValuationApi {
     @Resource
     private ValuationQueryService valuationQueryService;
 
+    @Resource
+    private ValuationAppService valuationAppService;
+
+    @Resource
+    private ValuationCalculationService valuationCalculationService;
+
     /**
      * 创建估值记录
      */
     @PostMapping("record")
     public Result<Void> create(@RequestBody @Valid CreateValuationCommand command) {
-        // TODO: 实现创建逻辑
+        valuationAppService.createValuation(command);
         return Result.ok(BaseResult.INSERT_SUCCESS);
     }
 
@@ -74,25 +82,25 @@ public class ValuationApi {
      */
     @DeleteMapping("record/{id}")
     public Result<Void> delete(@PathVariable Long id) {
-        // TODO: 实现删除逻辑
+        valuationAppService.deleteValuation(id);
         return Result.ok(BaseResult.DELETE_SUCCESS);
     }
 
     /**
-     * 计算实时估值
+     * 计算实时估值-按项目ID
      */
     @GetMapping("calculate/project/{projectId}")
     public Result<BigDecimal> calculateByProjectId(@PathVariable Long projectId) {
-        // TODO: 调用计算服务
-        return Result.ok(BigDecimal.ZERO);
+        BigDecimal amount = valuationCalculationService.calculateByProjectId(projectId);
+        return Result.ok(amount);
     }
 
     /**
-     * 根据项目代码计算实时估值
+     * 计算实时估值-按项目代码
      */
     @GetMapping("calculate/code/{projectCode}")
     public Result<BigDecimal> calculateByProjectCode(@PathVariable String projectCode) {
-        // TODO: 调用计算服务
-        return Result.ok(BigDecimal.ZERO);
+        BigDecimal amount = valuationCalculationService.calculateByProjectCode(projectCode);
+        return Result.ok(amount);
     }
 }

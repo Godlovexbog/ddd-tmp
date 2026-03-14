@@ -16,5 +16,9 @@
             <artifactId>valuation-application</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>net.zhaixing.blog</groupId>
+            <artifactId>user-common</artifactId>
+        </dependency>
     </dependencies>
 </project>

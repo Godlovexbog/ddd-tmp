@@ -71,9 +71,9 @@
 
 - [x] 12.1 在 application/command/valuation/ 创建 ValuationCommand 接口
 - [x] 12.2 在 application/command/valuation/ 创建 CreateValuationCommand（实现 Command，带 @Valid 校验）
-- [ ] 12.3 在 application/command/transaction/ 创建 TransactionCommand 接口
-- [ ] 12.4 在 application/command/delivery/ 创建 DeliveryCommand 接口
-- [ ] 12.5 在 application/command/impl/ 创建 AppService 实现类（使用 @Transactional）
+- [x] 12.3 在 application/command/transaction/ 创建 TransactionCommand 接口
+- [x] 12.4 在 application/command/delivery/ 创建 DeliveryCommand 接口
+- [x] 12.5 在 application/command/impl/ 创建 AppService 实现类（使用 @Transactional）
 - [ ] 12.6 使用 @RateLimiter 注解实现限流（如需要）
 
 ## 13. 应用层 - 查询服务
@@ -85,8 +85,8 @@
 
 ## 14. 应用层 - 实时估值计算
 
-- [ ] 14.1 在 application/ 创建 ValuationCalculationAppService
-- [ ] 14.2 实现计算逻辑：valuationAmount + transactionAmount + deliveryAmount
+- [x] 14.1 在 application/ 创建 ValuationCalculationAppService
+- [x] 14.2 实现计算逻辑：valuationAmount + transactionAmount + deliveryAmount
 
 ## 15. 交互层 - REST API（遵循 user-interaction.md 和 api-security.md）
 
