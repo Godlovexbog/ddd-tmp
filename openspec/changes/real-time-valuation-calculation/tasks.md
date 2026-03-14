@@ -57,8 +57,8 @@
 
 ## 10. 基础设施层 - 事件
 
-- [ ] 10.1 创建 DomainEventPublisher 基础设施实现（如不存在）
-- [ ] 10.2 创建 DomainEventRepository 基础设施实现（如不存在）
+- [x] 10.1 创建 DomainEventPublisher 基础设施实现（如不存在）
+- [x] 10.2 创建 DomainEventRepository 基础设施实现（如不存在）
 
 ## 11. 应用层 - DTO/VO 模型（遵循 user-application.md）
 
@@ -114,6 +114,6 @@
 
 ## 18. 文档
 
-- [ ] 18.1 更新模块 README 文件
-- [ ] 18.2 添加 API 文档注释
+- [x] 18.1 更新模块 README 文件
+- [x] 18.2 添加 API 文档注释
 - [ ] 18.3 更新数据库设计文档
