@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: ValuationCalculationService 单元测试
-ValuationCalculationService 必须有完整的单元测试，覆盖所有业务场景。
+ValuationCalculationService SHALL have complete unit tests covering all business scenarios.
 
 #### Scenario: 无交易记录时返回基础估值金额
 - **WHEN** 估值记录存在但无交易和交付记录
@@ -38,7 +38,7 @@ ValuationCalculationService 必须有完整的单元测试，覆盖所有业务�
 ---
 
 ### Requirement: ValuationRecord 领域实体测试
-ValuationRecord 实体必须正确保存和查询。
+ValuationRecord MUST correctly save and query entities.
 
 #### Scenario: 创建估值记录
 - **WHEN** 调用 Repository 保存估值记录
@@ -55,7 +55,7 @@ ValuationRecord 实体必须正确保存和查询。
 ---
 
 ### Requirement: TransactionRecord 领域实体测试
-TransactionRecord 实体必须正确处理不同状态的交易。
+TransactionRecord MUST correctly handle different transaction statuses.
 
 #### Scenario: 查询成功交易
 - **WHEN** 查询 transaction_status = '1' 的记录
@@ -68,7 +68,7 @@ TransactionRecord 实体必须正确处理不同状态的交易。
 ---
 
 ### Requirement: ValuationApi 集成测试
-ValuationApi 接口必须正确处理请求和响应。
+ValuationApi MUST correctly handle requests and responses.
 
 #### Scenario: 创建估值记录成功
 - **WHEN** 发送有效的创建请求
@@ -89,7 +89,7 @@ ValuationApi 接口必须正确处理请求和响应。
 ---
 
 ### Requirement: 脱敏注解测试
-敏感信息必须被正确脱敏处理。
+Sensitive information MUST be properly desensitized.
 
 #### Scenario: 账户信息脱敏
 - **WHEN** 查询包含敏感字段的记录
