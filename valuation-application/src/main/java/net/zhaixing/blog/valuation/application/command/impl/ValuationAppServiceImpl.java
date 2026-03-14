@@ -1,6 +1,6 @@
 package net.zhaixing.blog.valuation.application.command.impl;
 
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import net.zhaixing.blog.valuation.application.command.ValuationAppService;
 import net.zhaixing.blog.valuation.application.command.delivery.CreateDeliveryCommand;

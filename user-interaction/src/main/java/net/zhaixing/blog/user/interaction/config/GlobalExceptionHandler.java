@@ -1,9 +1,9 @@
 package net.zhaixing.blog.user.interaction.config;
 
 import cn.hutool.core.util.StrUtil;
-import jakarta.annotation.Resource;
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.ConstraintViolationException;
+import javax.annotation.Resource;
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
 import net.zhaixing.blog.user.common.exception.ServiceException;
 import net.zhaixing.blog.user.common.exception.ValidationException;

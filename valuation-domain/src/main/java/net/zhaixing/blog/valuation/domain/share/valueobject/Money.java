@@ -17,7 +17,7 @@ import java.util.Objects;
  * @since 1.0.0
  */
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 public class Money implements ValueObject<Money> {
 
     /**

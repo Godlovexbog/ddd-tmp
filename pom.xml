@@ -32,15 +32,15 @@
         <!--  项目编码  -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--  java版本  -->
-        <java.version>17</java.version>
+        <java.version>1.8</java.version>
         <!--  lombok版本  -->
-        <lombok.version>1.18.30</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
         <!--    SpringBoot    -->
-        <spring-boot.version>3.0.2</spring-boot.version>
+        <spring-boot.version>2.7.18</spring-boot.version>
         <!--    SpringCloudAlibaba    -->
-        <spring-cloud-alibaba.version>2022.0.0.0</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2021.0.5.0</spring-cloud-alibaba.version>
         <!--    SpringCloud    -->
-        <spring-cloud.version>2022.0.0</spring-cloud.version>
+        <spring-cloud.version>2021.0.5</spring-cloud.version>
         <!--    MybatisPlus    -->
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
         <!--    Druid    -->
@@ -58,6 +58,24 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

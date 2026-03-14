@@ -1,6 +1,6 @@
 package net.zhaixing.blog.user.application.command.impl;
 
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import net.zhaixing.blog.user.application.ability.user.UserCreateAbility;
 import net.zhaixing.blog.user.application.ability.user.cmd.CreateUserAbilityCommand;

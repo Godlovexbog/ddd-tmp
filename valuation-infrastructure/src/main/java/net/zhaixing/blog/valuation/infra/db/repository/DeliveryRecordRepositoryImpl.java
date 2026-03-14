@@ -7,6 +7,7 @@ import net.zhaixing.blog.valuation.domain.share.enums.TransactionStatusEnum;
 import net.zhaixing.blog.valuation.infra.db.converter.DeliveryRecordConverter;
 import net.zhaixing.blog.valuation.infra.db.mapper.DeliveryRecordMapper;
 import net.zhaixing.blog.valuation.infra.db.model.CashDeliveryRecordPO;
+import net.zhaixing.blog.valuation.infra.db.model.FinancialProductDeliveryRecordPO;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;

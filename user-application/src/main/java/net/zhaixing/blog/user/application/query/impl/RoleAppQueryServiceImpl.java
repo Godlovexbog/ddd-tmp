@@ -1,7 +1,7 @@
 package net.zhaixing.blog.user.application.query.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import net.zhaixing.blog.user.application.query.RoleAppQueryService;
 import net.zhaixing.blog.user.application.query.model.role.dto.RoleDTO;
 import net.zhaixing.blog.user.infra.db.mapper.RoleMapper;

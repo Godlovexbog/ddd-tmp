@@ -1,7 +1,7 @@
 package net.zhaixing.blog.user.interaction.api;
 
-import jakarta.annotation.Resource;
-import jakarta.validation.Valid;
+import javax.annotation.Resource;
+import javax.validation.Valid;
 import net.zhaixing.blog.user.application.ability.user.cmd.CreateUserAbilityCommand;
 import net.zhaixing.blog.user.application.command.UserAppService;
 import net.zhaixing.blog.user.application.command.user.UpdateUserCommand;

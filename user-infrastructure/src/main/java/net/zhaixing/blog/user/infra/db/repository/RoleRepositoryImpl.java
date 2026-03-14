@@ -1,7 +1,7 @@
 package net.zhaixing.blog.user.infra.db.repository;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import net.zhaixing.blog.user.domain.aggregate.role.model.Role;
 import net.zhaixing.blog.user.domain.aggregate.role.repository.RoleRepository;
 import net.zhaixing.blog.user.infra.db.converter.RoleConverter;

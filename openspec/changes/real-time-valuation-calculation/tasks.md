@@ -91,8 +91,8 @@
 ## 15. 交互层 - REST API（遵循 user-interaction.md 和 api-security.md）
 
 - [x] 15.1 在 interaction/api/ 创建 ValuationApi 控制器
-- [ ] 15.2 在 interaction/api/ 创建 TransactionApi 控制器
-- [ ] 15.3 在 interaction/api/ 创建 DeliveryApi 控制器
+- [x] 15.2 在 interaction/api/ 创建 TransactionApi 控制器
+- [x] 15.3 在 interaction/api/ 创建 DeliveryApi 控制器
 - [x] 15.4 添加 @Valid 参数校验注解
 - [ ] 15.5 添加幂等性控制（如 @Idempotent）
 - [ ] 15.6 在 interaction/config/ 配置全局异常处理（如需要特殊处理）
@@ -107,42 +107,42 @@
 
 ### 17.1 单元测试
 
-- [ ] 17.1.1 在 test/valuation/domain/service/ 创建 ValuationCalculationServiceTest
-- [ ] 17.1.2 测试计算逻辑：无交易无交付
-- [ ] 17.1.3 测试计算逻辑：含成功交易
-- [ ] 17.1.4 测试计算逻辑：含成功交付
-- [ ] 17.1.5 测试计算逻辑：含所有组件
-- [ ] 17.1.6 测试计算逻辑：忽略失败交易
-- [ ] 17.1.7 测试计算逻辑：忽略估值日期之前交易
-- [ ] 17.1.8 测试计算逻辑：空估值记录返回0
+- [x] 17.1.1 在 test/valuation/domain/service/ 创建 ValuationCalculationServiceTest
+- [x] 17.1.2 测试计算逻辑：无交易无交付
+- [x] 17.1.3 测试计算逻辑：含成功交易
+- [x] 17.1.4 测试计算逻辑：含成功交付
+- [x] 17.1.5 测试计算逻辑：含所有组件
+- [x] 17.1.6 测试计算逻辑：忽略失败交易
+- [x] 17.1.7 测试计算逻辑：忽略估值日期之前交易
+- [x] 17.1.8 测试计算逻辑：空估值记录返回0
 
 ### 17.2 应用服务测试
 
-- [ ] 17.2.1 在 test/valuation/application/command/ 创建 ValuationAppServiceTest
-- [ ] 17.2.2 测试创建估值记录
-- [ ] 17.2.3 测试创建交易记录
-- [ ] 17.2.4 测试创建交付记录（现金）
-- [ ] 17.2.5 测试创建交付记录（金融产品）
-- [ ] 17.2.6 测试删除记录
+- [x] 17.2.1 在 test/valuation/application/command/ 创建 ValuationAppServiceTest
+- [x] 17.2.2 测试创建估值记录
+- [x] 17.2.3 测试创建交易记录
+- [x] 17.2.4 测试创建交付记录（现金）
+- [x] 17.2.5 测试创建交付记录（金融产品）
+- [x] 17.2.6 测试删除记录
 
 ### 17.3 查询服务测试
 
-- [ ] 17.3.1 在 test/valuation/application/query/ 创建 ValuationQueryServiceTest
-- [ ] 17.3.2 测试按ID查询
-- [ ] 17.3.3 测试按项目ID查询
-- [ ] 17.3.4 测试按项目代码查询
+- [x] 17.3.1 在 test/valuation/application/query/ 创建 ValuationQueryServiceTest
+- [x] 17.3.2 测试按ID查询
+- [x] 17.3.3 测试按项目ID查询
+- [x] 17.3.4 测试按项目代码查询
 
 ### 17.4 API 集成测试
 
-- [ ] 17.4.1 在 test/valuation/interaction/api/ 创建 ValuationApiTest
-- [ ] 17.4.2 测试创建估值 - 成功场景
-- [ ] 17.4.3 测试创建估值 - 参数校验失败（projectId为空）
-- [ ] 17.4.4 测试创建估值 - 参数校验失败（targetAmount为负数）
-- [ ] 17.4.5 测试查询估值 - 记录存在
-- [ ] 17.4.6 测试查询估值 - 记录不存在
-- [ ] 17.4.7 测试删除估值 - 成功
-- [ ] 17.4.8 测试计算估值 - 按项目ID
-- [ ] 17.4.9 测试计算估值 - 按项目代码
+- [x] 17.4.1 在 test/valuation/interaction/api/ 创建 ValuationApiTest
+- [x] 17.4.2 测试创建估值 - 成功场景
+- [x] 17.4.3 测试创建估值 - 参数校验失败（projectId为空）
+- [x] 17.4.4 测试创建估值 - 参数校验失败（targetAmount为负数）
+- [x] 17.4.5 测试查询估值 - 记录存在
+- [x] 17.4.6 测试查询估值 - 记录不存在
+- [x] 17.4.7 测试删除估值 - 成功
+- [x] 17.4.8 测试计算估值 - 按项目ID
+- [x] 17.4.9 测试计算估值 - 按项目代码
 
 ### 17.5 限流测试
 

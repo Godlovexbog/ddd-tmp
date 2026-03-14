@@ -1,7 +1,7 @@
 package net.zhaixing.blog.user.infra.event;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import net.zhaixing.blog.user.common.util.GsonUtil;
 import net.zhaixing.blog.user.domain.share.event.BaseDomainEvent;

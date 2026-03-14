@@ -1,6 +1,7 @@
 package net.zhaixing.blog.valuation.infra.db.model;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import net.zhaixing.blog.user.common.model.result.BaseModel;
@@ -60,4 +61,10 @@ public class ValuationRecordPO extends BaseModel {
      * 账户代码
      */
     private String accountCode;
+
+    /**
+     * 是否删除: 0-否, 1-是
+     */
+    @TableLogic(delval = "1", value = "0")
+    private Integer isDeleted;
 }

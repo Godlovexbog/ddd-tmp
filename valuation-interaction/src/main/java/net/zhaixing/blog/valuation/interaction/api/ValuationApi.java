@@ -1,7 +1,7 @@
 package net.zhaixing.blog.valuation.interaction.api;
 
-import jakarta.annotation.Resource;
-import jakarta.validation.Valid;
+import javax.annotation.Resource;
+import javax.validation.Valid;
 import net.zhaixing.blog.user.common.annotation.RateLimiter;
 import net.zhaixing.blog.user.common.model.result.BaseResult;
 import net.zhaixing.blog.user.common.model.result.Result;
@@ -50,7 +50,7 @@ public class ValuationApi {
     @PostMapping("record")
     public Result<Void> create(@RequestBody @Valid CreateValuationCommand command) {
         valuationAppService.createValuation(command);
-        return Result.ok(BaseResult.INSERT_SUCCESS);
+        return Result.success(null);
     }
 
     /**
@@ -59,7 +59,7 @@ public class ValuationApi {
     @GetMapping("record/{id}")
     public Result<ValuationDTO> getById(@PathVariable Long id) {
         ValuationDTO dto = valuationQueryService.getById(id);
-        return Result.ok(dto);
+        return Result.success(dto);
     }
 
     /**
@@ -68,7 +68,7 @@ public class ValuationApi {
     @GetMapping("record/project/{projectId}")
     public Result<List<ValuationDTO>> getByProjectId(@PathVariable Long projectId) {
         List<ValuationDTO> list = valuationQueryService.getByProjectId(projectId);
-        return Result.ok(list);
+        return Result.success(list);
     }
 
     /**
@@ -77,7 +77,7 @@ public class ValuationApi {
     @GetMapping("record/code/{projectCode}")
     public Result<ValuationDTO> getByProjectCode(@PathVariable String projectCode) {
         ValuationDTO dto = valuationQueryService.getByProjectCode(projectCode);
-        return Result.ok(dto);
+        return Result.success(dto);
     }
 
     /**
@@ -86,7 +86,7 @@ public class ValuationApi {
     @DeleteMapping("record/{id}")
     public Result<Void> delete(@PathVariable Long id) {
         valuationAppService.deleteValuation(id);
-        return Result.ok(BaseResult.DELETE_SUCCESS);
+        return Result.success(null);
     }
 
     /**
@@ -97,7 +97,7 @@ public class ValuationApi {
     @GetMapping("calculate/project/{projectId}")
     public Result<BigDecimal> calculateByProjectId(@PathVariable Long projectId) {
         BigDecimal amount = valuationCalculationService.calculateByProjectId(projectId);
-        return Result.ok(amount);
+        return Result.success(amount);
     }
 
     /**
@@ -108,6 +108,6 @@ public class ValuationApi {
     @GetMapping("calculate/code/{projectCode}")
     public Result<BigDecimal> calculateByProjectCode(@PathVariable String projectCode) {
         BigDecimal amount = valuationCalculationService.calculateByProjectCode(projectCode);
-        return Result.ok(amount);
+        return Result.success(amount);
     }
 }

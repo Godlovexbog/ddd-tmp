@@ -1,7 +1,7 @@
 package net.zhaixing.blog.user.infra.db.repository;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;;
 import net.zhaixing.blog.user.domain.aggregate.user.model.User;
 import net.zhaixing.blog.user.domain.aggregate.user.repository.UserRepository;
 import net.zhaixing.blog.user.infra.db.converter.UserConverter;

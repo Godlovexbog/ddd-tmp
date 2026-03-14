@@ -1,7 +1,7 @@
 package net.zhaixing.blog.user.application.ability.user;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import net.zhaixing.blog.user.application.ability.share.AbilityContext;
 import net.zhaixing.blog.user.application.ability.share.BaseAbility;
 import net.zhaixing.blog.user.application.ability.user.cmd.CreateUserAbilityCommand;

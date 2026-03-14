@@ -1,8 +1,8 @@
 package net.zhaixing.blog.user.application.ability.user.cmd;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import lombok.Data;
 import net.zhaixing.blog.user.common.domain.AbilityCommand;
 import net.zhaixing.blog.user.common.domain.Command;
